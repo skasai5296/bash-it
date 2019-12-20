@@ -1,6 +1,7 @@
 cite about-alias
 about-alias 'general aliases'
 
+
 if ls --color -d . &> /dev/null
 then
   alias ls="ls --color=auto"
@@ -19,8 +20,10 @@ alias l1='ls -1'
 alias _="sudo"
 
 # Shortcuts to edit startup files
-alias vbrc="vim ~/.bashrc"
-alias vbpf="vim ~/.bash_profile"
+alias br="vim ~/.bashrc"
+alias bp="vim ~/.bash_profile"
+alias sbr='source ~/.bashrc'
+alias sbp='source ~/.bash_profile'
 
 # colored grep
 # Need to check an existing file for a pattern that will be found to ensure
@@ -56,6 +59,7 @@ alias ipy='ipython'
 
 alias piano='pianobar'
 
+cd() { builtin cd "$@"&& ll; }
 alias ..='cd ..'         # Go up one directory
 alias cd..='cd ..'       # Common misspelling for going up one directory
 alias ...='cd ../..'     # Go up two directories
@@ -113,3 +117,13 @@ catt() {
     fi
   done
 }
+
+alias g++='g++ -std=c++14 -Wall'
+alias exA='g++ A.cpp&&./a.out'
+alias exB='g++ B.cpp&&./a.out'
+alias exC='g++ C.cpp&&./a.out'
+alias exD='g++ D.cpp&&./a.out'
+alias exE='g++ E.cpp&&./a.out'
+alias exF='g++ F.cpp&&./a.out'
+alias exG='g++ G.cpp&&./a.out'
+alias exH='g++ H.cpp&&./a.out'
