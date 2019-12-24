@@ -29,7 +29,7 @@ function prompt_command() {
             PS2="\[\e[38;5;45m\]> \[\e[0m\]"
             ;;
         linux*)
-            PS1="\n$(battery_char) $(__bobby_clock)${yellow}$(ruby_version_prompt) ${purple}\h ${reset_color}in ${green}\w\n${bold_cyan}$(scm_prompt_char_info) ${green}\$${reset_color} "
+            PS1="\n$(battery_char) $(__bobby_clock)${yellow}$(ruby_version_prompt) ${purple}\h ${reset_color}in ${green}\w\n${bold_cyan}$(scm_prompt_char_info) ${green}\$ ${reset_color} "
             PS2="\[\e[38;5;214m\]> \[\e[0m\]"
             ;;
     esac
